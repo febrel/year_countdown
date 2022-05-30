@@ -1,1 +1,1 @@
-# Proyecto creado en Javascript para contar los dias de cumpleaños
+Proyecto creado en Javascript para contar los dias de cumpleaños
