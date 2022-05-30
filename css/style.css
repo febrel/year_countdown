@@ -7,8 +7,10 @@
 
 body {
     background-image: url("/assets/fondo.jpg");
-    background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,4 +100,76 @@ h1 {
 
 .select-css option[selected] {
     background-color: orange;
+}
+
+
+/* Background para ancho máximo de la pantalla física */
+@media only screen and (max-device-width: 767px) {
+    body {
+        background-image: url("/assets/fondo.jpg");
+    }
+
+    h1 {
+        font-weight: normal;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .countdown-container {
+        display: flex;
+    }
+
+    .big-text {
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1;
+        margin: 0 1rem;
+    }
+
+    .countdown-el {
+        text-align: center;
+    }
+
+    .countdown-el span {
+        font-size: 1rem;
+    }
+}
+
+/* Background para ancho máximo del navegador */
+@media only screen and (max-width: 767px) {
+    body {
+        background-image: url("/assets/fondo.jpg");
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    h1 {
+        font-weight: normal;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .countdown-container {
+        display: flex;
+
+    }
+
+    .big-text {
+        font-weight: bold;
+        font-size: 3rem;
+        line-height: 1;
+        margin: 0 1rem;
+
+    }
+
+    .countdown-el {
+        text-align: center;
+
+    }
+
+    .countdown-el span {
+        font-size: 1rem;
+    }
 }
